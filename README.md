@@ -32,4 +32,4 @@ flet run
 CipherGrid isn’t just a puzzle game; it’s a test of intelligence, speed, and problem-solving! Whether you’re a casual player or a puzzle master, CipherGrid will keep you entertained.
 
 ## 📜 License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/kumar2215/CipherGrid/blob/main/LICENSE) file for details.
