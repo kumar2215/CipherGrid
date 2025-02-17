@@ -8,9 +8,9 @@ def home_page(page: ft.Page) -> ft.View:
         bgcolor="#9effff",
         controls=[
             ft.Container(height=20),
-            ft.Image(src_base64=render_image("assets/icon.png", 100, 250), fit=ft.ImageFit.CONTAIN),
+            ft.Image(src_base64=render_image("assets/logo.png", 100, 250), fit=ft.ImageFit.CONTAIN),
             ft.Image(
-                src_base64=render_image("assets/homepage_icon.png", 400, 400),
+                src_base64=render_image("assets/icon.png", 400, 400),
                 fit=ft.ImageFit.CONTAIN
             ),
             ft.ElevatedButton(text="Start new game", on_click=lambda _: page.go("/select")),
