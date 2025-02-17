@@ -11,7 +11,7 @@ CipherGrid is an exciting and engaging puzzle game that challenges your mathemat
 - **Intuitive Gameplay** – Easy to learn but challenging to master.
 
 ## 🚀 How to Play
-1. Tap on a tile to enter a letter.
+1. Tap on a tile to enter a number.
 2. Solve the given mathematical problems to complete the grid.
 3. Complete the grid as fast as you can to achieve the best time!
 
