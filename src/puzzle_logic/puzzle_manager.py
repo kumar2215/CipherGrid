@@ -1,6 +1,6 @@
-from packages.problem_generation.generate import MathProblem
-from packages.misc.difficulty import Difficulty
-from packages.puzzle_logic.crossword import CrossWordPuzzle, create_crossword_grid
+from src.problem_generation.generate import MathProblem
+from src.misc.difficulty import Difficulty
+from src.puzzle_logic.crossword import CrossWordPuzzle, create_crossword_grid
 import sympy as sp
 import re
 import random

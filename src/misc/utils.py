@@ -1,7 +1,7 @@
 import matplotlib
 import matplotlib.pyplot as plt
 from PIL import Image
-from packages.puzzle_logic.puzzle_manager import PuzzleManager
+from src.puzzle_logic.puzzle_manager import PuzzleManager
 import io
 import base64
 import multiprocessing

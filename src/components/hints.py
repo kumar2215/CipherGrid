@@ -1,6 +1,6 @@
 import flet as ft
-from packages.puzzle_logic.crossword import Orientation
-from packages.misc.utils import render_latex_to_image
+from src.puzzle_logic.crossword import Orientation
+from src.misc.utils import render_latex_to_image
 
 def get_column_hints(hints: list[str]):
     return ft.Row(

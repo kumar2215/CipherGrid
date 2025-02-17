@@ -1,10 +1,10 @@
 import flet as ft
-from packages.puzzle_logic.crossword import Orientation
-from packages.puzzle_logic.puzzle_manager import PuzzleManager
-from packages.components.completed_message import completed_message_dialog
-from packages.misc.difficulty import Difficulty, DIFFICULTY_TO_COLOR
-from packages.misc.time_tracker import Timer
-from packages.misc.utils import generate_puzzle
+from src.puzzle_logic.crossword import Orientation
+from src.puzzle_logic.puzzle_manager import PuzzleManager
+from src.components.completed_message import completed_message_dialog
+from src.misc.difficulty import Difficulty, DIFFICULTY_TO_COLOR
+from src.misc.time_tracker import Timer
+from src.misc.utils import generate_puzzle
 
 CELL_SIZE = 40
 ALL_CELLS = []

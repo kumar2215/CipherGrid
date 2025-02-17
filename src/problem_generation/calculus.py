@@ -1,5 +1,5 @@
 import random
-from packages.problem_generation.generate import MathProblem
+from src.problem_generation.generate import MathProblem
 import sympy as sp
 
 class IntegrationProblem(MathProblem):

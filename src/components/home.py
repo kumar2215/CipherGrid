@@ -1,5 +1,5 @@
 import flet as ft
-from packages.misc.utils import render_image
+from src.misc.utils import render_image
 
 def home_page(page: ft.Page) -> ft.View:
     return ft.View(
@@ -8,9 +8,9 @@ def home_page(page: ft.Page) -> ft.View:
         bgcolor="#9effff",
         controls=[
             ft.Container(height=20),
-            ft.Image(src_base64=render_image("assets/logo.png", 100, 250), fit=ft.ImageFit.CONTAIN),
+            ft.Image(src_base64=render_image("src/assets/logo.png", 100, 250), fit=ft.ImageFit.CONTAIN),
             ft.Image(
-                src_base64=render_image("assets/icon.png", 400, 400),
+                src_base64=render_image("src/assets/icon.png", 400, 400),
                 fit=ft.ImageFit.CONTAIN
             ),
             ft.ElevatedButton(text="Start new game", on_click=lambda _: page.go("/select")),

@@ -1,6 +1,6 @@
 import flet as ft
-from packages.misc.difficulty import Difficulty
-from packages.misc.utils import get_formatted_time_str, get_time_from_str
+from src.misc.difficulty import Difficulty
+from src.misc.utils import get_formatted_time_str, get_time_from_str
 
 def completed_message_dialog(page: ft.Page, difficulty: Difficulty, time_txt: ft.Text) -> ft.AlertDialog:
     time_taken = get_formatted_time_str(time_txt.value)

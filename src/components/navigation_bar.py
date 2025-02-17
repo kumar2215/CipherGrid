@@ -1,5 +1,5 @@
 import flet as ft
-from packages.misc.time_tracker import Timer
+from src.misc.time_tracker import Timer
 
 def app_navigation_bar(page: ft.Page, timer: Timer) -> ft.NavigationBar:
 

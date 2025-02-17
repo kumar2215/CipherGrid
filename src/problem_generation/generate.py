@@ -11,9 +11,9 @@ class MathProblem:
 
     @staticmethod
     def initialise_subclasses():
-        import packages.problem_generation.algebra
-        import packages.problem_generation.trigonometry
-        import packages.problem_generation.calculus
+        import src.problem_generation.algebra
+        import src.problem_generation.trigonometry
+        import src.problem_generation.calculus
         # importing other math problem modules goes here
 
     def generate(self, complexity: int, var: sp.Symbol, target: sp.Integer, expr: sp.Expr = None, last_problem=None):

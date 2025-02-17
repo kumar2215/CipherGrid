@@ -1,6 +1,6 @@
 import flet as ft
-from packages.problem_generation.generate import MathProblem
-from packages.misc.difficulty import Difficulty
+from src.problem_generation.generate import MathProblem
+from src.misc.difficulty import Difficulty
 
 def difficulty_column(puzzle_params: dict):
 

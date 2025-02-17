@@ -1,5 +1,5 @@
 import flet as ft
-from packages.misc.difficulty import Difficulty, DIFFICULTY_TO_COLOR
+from src.misc.difficulty import Difficulty, DIFFICULTY_TO_COLOR
 
 def best_times_page(page: ft.Page) -> ft.View:
 

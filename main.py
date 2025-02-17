@@ -1,13 +1,13 @@
 import flet as ft
-from packages.components.grid import grid_component
-from packages.components.hints import hints_component
-from packages.components.home import home_page
-from packages.components.selection import selection_page
-from packages.components.instructions import instructions_page
-from packages.components.best_times import best_times_page
-from packages.components.navigation_bar import app_navigation_bar
-from packages.misc.utils import generate_puzzle
-from packages.misc.time_tracker import Timer
+from src.components.grid import grid_component
+from src.components.hints import hints_component
+from src.components.home import home_page
+from src.components.selection import selection_page
+from src.components.instructions import instructions_page
+from src.components.best_times import best_times_page
+from src.components.navigation_bar import app_navigation_bar
+from src.misc.utils import generate_puzzle
+from src.misc.time_tracker import Timer
 import multiprocessing
 import time
 
