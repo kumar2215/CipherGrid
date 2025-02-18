@@ -1,6 +1,6 @@
 # CipherGrid
 
-![CipherGrid Homepage](/src/assets/homepage.png)
+![CipherGrid Homepage](/assets/homepage.png)
 
 CipherGrid is an exciting and engaging puzzle game that challenges your mathematical and problem-solving skills! Perfect for puzzle lovers, this game blends elements of classic crosswords with mathematical challenges to provide a unique and rewarding experience.
 
