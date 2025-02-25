@@ -16,7 +16,7 @@ def instructions_page(page: ft.Page) -> ft.View:
                 size=20
             ),
             ft.Text("Steps to solve the hint:", size=20, weight=ft.FontWeight.W_500, color="#b4b4b4"),
-            ft.Text("1. Solve for the capital letter in the form the solution to the problem is given in.", size=20),
+            ft.Text("1. Solve for the capital letter in the generic form of the given solution.", size=20),
             ft.Text("2. Convert that number into the base specified in the hint.", size=20),
             ft.Text("3. Fill in the grid with the number you got from the conversion.", size=20),
             ft.Markdown(

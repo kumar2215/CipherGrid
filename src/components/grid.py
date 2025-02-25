@@ -37,22 +37,20 @@ class Cell(ft.TextField):
             self.border_color = "black"
             self.update()
             return
-        try:
-            num = event.control.value
-            if num == self.right_val and all(cell.value == cell.right_val for cell in self.puzzle.cells):
-                for cell in self.puzzle.cells:
-                    if cell != self:
-                        cell.border_color = "green"
-                        cell.update()
-                self.border_color = "green"
-                self.update()
-                Cell.check_if_done()
-                return
-            num = int(num)
-            if len(str(num)) > 1: self.border_color = "red"
-            else: self.border_color = "black"
-        except ValueError:
+        num = event.control.value
+        if num == self.right_val and all(cell.value == cell.right_val for cell in self.puzzle.cells):
+            for cell in self.puzzle.cells:
+                if cell != self:
+                    cell.border_color = "green"
+                    cell.update()
+            self.border_color = "green"
+            self.update()
+            Cell.check_if_done()
+            return
+        if len(num) > 1 or not num.isdigit():
             self.border_color = "red"
+        else:
+            self.border_color = "black"
         self.update()
 
 def grid_component(page: ft.Page, puzzle_manager: PuzzleManager, time_txt: ft.Text, timer: Timer) -> ft.Column:

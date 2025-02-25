@@ -5,7 +5,6 @@ import sympy as sp
 import re
 import random
 from dataclasses import dataclass
-import multiprocessing
 
 @dataclass
 class PuzzleParameters:
@@ -27,7 +26,7 @@ def convert_base(num: int, base: int) -> str:
 
 class PuzzleManager:
 
-    def __init__(self, difficulty: Difficulty, bases: set[int], queue):
+    def __init__(self, difficulty: Difficulty, bases: set[int]):
         self.difficulty = difficulty
         self.bases = bases
         self.puzzle_params = None
@@ -83,11 +82,8 @@ class PuzzleManager:
         for var in self.hints:
             orientation = self.puzzles[self.variables[var][0]].orientation
             self.hints[var] = (self.hints[var], orientation)
-        queue.put(self)
 
 if __name__ == "__main__":
-    q = multiprocessing.Queue()
-    PuzzleManager(Difficulty.EASY, set(range(2, 11)), q)
-    grid = q.get()
-    print(grid.variables)
-    print(grid.hints)
+    puzzle_manager = PuzzleManager(Difficulty.EASY, set(range(2, 11)))
+    print(puzzle_manager.variables)
+    print(puzzle_manager.hints)
